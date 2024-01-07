@@ -38,7 +38,7 @@ public class BlockRegistry {
             }
         });
     public static final RegistryObject<Block> LEMON_SAPLING = BLOCKS.register("lemon_sapling",
-            () -> new SaplingBlock(new LemonTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
