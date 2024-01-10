@@ -73,6 +73,13 @@ public class Test
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ItemRegistry.LEMON_LEAVES);
             event.accept(ItemRegistry.LEMON_SAPLING);
+            event.accept(ItemRegistry.LEMON_LOG);
+        } else if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ItemRegistry.LEMON_LOG);
+            event.accept(ItemRegistry.LEMON_WOOD);
+            event.accept(ItemRegistry.STRIPPED_LEMON_LOG);
+            event.accept(ItemRegistry.STRIPPED_LEMON_WOOD);
+            event.accept(ItemRegistry.LEMON_PLANKS);
         }
     }
 

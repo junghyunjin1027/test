@@ -22,6 +22,12 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> LEMON_LEAVES = ITEMS.register("lemon_leaves", () -> new BlockItem(BlockRegistry.LEMON_LEAVES.get(), new Item.Properties()));
     public static final RegistryObject<Item> LEMON_SAPLING = ITEMS.register("lemon_sapling", () -> new BlockItem(BlockRegistry.LEMON_SAPLING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LEMON_LOG = ITEMS.register("lemon_log", () -> new BlockItem(BlockRegistry.LEMON_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LEMON_WOOD = ITEMS.register("lemon_wood", () -> new BlockItem(BlockRegistry.LEMON_WOOD.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STRIPPED_LEMON_LOG = ITEMS.register("stripped_lemon_log", () -> new BlockItem(BlockRegistry.STRIPPED_LEMON_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STRIPPED_LEMON_WOOD = ITEMS.register("stripped_lemon_wood", () -> new BlockItem(BlockRegistry.STRIPPED_LEMON_WOOD.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LEMON_PLANKS = ITEMS.register("lemon_planks", () -> new BlockItem(BlockRegistry.LEMON_PLANKS.get(), new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
